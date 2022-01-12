@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Burger</title>
+</head>
+<body>
+    <section class="hat">
+        <div class="logotype">
+        </div>
+        <div class="burger">
+            <img src="burger.png" class="addBtn" alt="burger">
+        </div>
+        <div class="closeBurger">
+            <img src="close.png" alt="close">
+        </div>
+    </section>
+    <section class="burger_menu">
+        <ul class="burger_ul">
+            <li class="burger__item"><a href="#">Главная</a></li>
+            <li class="burger__item"><a href="#">О нас</a></li>
+            <li class="burger__item"><a href="#">Тех. Служба</a></li>
+            <li class="burger__item"><a href="#">Местонахождение</a></li>
+        </ul>
+    </section>
+    <style>
+        .closeBurger {
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+            border-radius: 100%;
+            cursor: pointer;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .burger__item>a {
+            color: wheat;
+            font-size: 40px;
+            text-decoration: none;
+        }
+        .burger__item {
+            list-style-type: none;
+        }
+        .burger__item>a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: whitesmoke;
+            transition: 1s all;
+        }
+        ul {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 70px;
+            transform: translate(0, -50%);
+            line-height: 50px;
+        }
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        .burger_menu {
+            background: rgb(127, 127, 250);
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            bottom: 500%;
+            left: 0;
+            height: 100%;
+        }
+        .logotype {
+            width: 80px;
+            height: 80px;
+            background: rgb(178, 178, 240);
+            border: 1px solid white;
+            border-radius: 100%;
+        }
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .burger {
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        .closeBurger img {
+            width: 80px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .hat {
+            width: 100%;
+            height: 140px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgb(126, 212, 126);
+        }
+        @media screen and (max-width:576px) {
+            ul {
+                width: 100%;
+                left: 0px;
+            }
+            .burger__item {
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>
